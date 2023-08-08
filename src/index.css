@@ -14,13 +14,14 @@
   /* accent colors */
 
   --main-accent-color: #ff6b08;
-
+  --secondary-accent-color: #242a37;
   /* font family */
   --main-font-family: "Montserrat", sans-serif;
   --extra-font-family: "Abril Fatface", cursive;
 }
 
 body {
+  margin: 0;
   font-family: var(--main-font-family);
 }
 
