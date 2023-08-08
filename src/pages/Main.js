@@ -1,11 +1,9 @@
-// import Header from "../components/Header";
-// import Characters from "./Characters";
+import Header from "../components/Header";
 
 const Main = () => {
   return (
     <div>
-      {/* <Header />
-      <Characters /> */}
+      <Header />
     </div>
   );
 };

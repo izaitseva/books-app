@@ -1,5 +1,9 @@
 export const paths = {
   main: "/",
-  characters: "/characters",
-  characterPage: "/characters/:id",
+  login: "/login",
+  register: "/register",
+  library: "/library",
+  libraryCategories: "/libraryCategories",
+  startTraining: "/startTraining",
+  statistics: "/statistics",
 };

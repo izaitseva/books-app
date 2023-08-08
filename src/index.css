@@ -12,10 +12,16 @@
   /* accent colors */
 
   --main-accent-color: #ff6b08;
-  
+
+  /* font family */
+  --main-font-family: "Montserrat", sans-serif;
+  --extra-font-family: "Abril Fatface", cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: var(--main-font-family);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-font-family);
 }
