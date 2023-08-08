@@ -1,8 +1,8 @@
 .main_container {
   display: flex;
-  /* align-items: center; */
-  /* gap: 241px; */
 }
+
+/* login container */
 
 .background_container {
   position: relative;
@@ -11,6 +11,7 @@
   z-index: 0;
   height: 850px;
   width: 549px;
+  justify-content: center;
   background: url("../images/login-background.svg");
   background-size: cover;
 
@@ -29,29 +30,75 @@
 
 .login_container {
   display: flex;
+  align-items: center;
   flex-direction: column;
   height: 430px;
   width: 400px;
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
   z-index: 5;
 }
 
 .login_input__container {
   display: flex;
+  font-size: 14px;
   flex-direction: column;
   margin-top: 108px;
   width: 320px;
-  /* text-align: left; */
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .accent {
   color: var(--main-accent-color);
 }
+
+.label {
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+  &:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+.input {
+  font-size: 14px;
+  height: 42px;
+  padding-left: 12px;
+  border: none;
+  background-color: var(--secondary-background-color);
+  color: var(--placeholder-text-color);
+}
+
+.login_btn {
+  margin-top: 32px;
+  border: none;
+  color: var(--btn-text-color);
+  height: 60px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600px;
+  background-color: var(--main-accent-color);
+}
+
+.link {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--main-accent-color);
+}
+
+/* quote container */
+
 .quote_container {
-  align-items: center;
+  margin: auto;
   text-align: center;
+}
+.quote_div {
+  width: 400px;
+}
+
+.main_quote {
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 21px;
+  color: var(----primary-text-color);
 }
 
 .quote_name {

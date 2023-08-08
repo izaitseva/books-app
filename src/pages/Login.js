@@ -8,28 +8,42 @@ export const Login = () => {
       <div className={styles.background_container}>
         <div className={styles.login_container}>
           <div className={styles.login_input__container}>
-            <label>
-              Email
-              <span className={styles.accent}>&#42;</span>
+            <label className={styles.label}>
+              Email<span className={styles.accent}>&#42;</span>
             </label>
-            <input />
-            <label>
-              Password
-              <span className={styles.accent}>&#42;</span>
+            <input
+              className={styles.input}
+              type="text"
+              id="username"
+              placeholder="your@email.com"
+            />
+            <label className={styles.label}>
+              Password<span className={styles.accent}>&#42;</span>
             </label>
-            <input />
+            <input
+              className={styles.input}
+              type="password"
+              id="password"
+              placeholder="Password"
+            />
+            <button className={styles.login_btn} type="submit">
+              Login
+            </button>
           </div>
-            <button type="submit">Login</button>
-            <NavLink>Register</NavLink>
+
+          <NavLink className={styles.link}>Register</NavLink>
         </div>
       </div>
 
       <div className={styles.quote_container}>
-        <img src={lapki} alt="quote" />
-        <h1>
-          Books are the ships of thoughts, wandering through the waves of time.
-        </h1>
-        <p className={styles.quote_name}>Francis Bacon</p>
+        <div className={styles.quote_div}>
+          <img src={lapki} alt="quote" />
+          <h1 className={styles.main_quote}>
+            Books are the ships of thoughts, wandering through the waves of
+            time.
+          </h1>
+          <p className={styles.quote_name}>Francis Bacon</p>
+        </div>
       </div>
     </div>
   );

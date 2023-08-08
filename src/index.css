@@ -2,6 +2,8 @@
   /* text color */
   --primary-text-color: #242a37;
   --secondary-text-color: #898f9f;
+  --placeholder-text-color: #a6abb9;
+  --btn-text-color: #ffffff;
 
   /* background  colors */
   --primary-background-color: #ffffff;
@@ -22,6 +24,11 @@ body {
   font-family: var(--main-font-family);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--main-font-family);
 }
