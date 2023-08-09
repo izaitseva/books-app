@@ -2,7 +2,7 @@
   display: flex;
 }
 
-/* login container */
+/* register container */
 
 .background_container {
   position: relative;
@@ -28,17 +28,17 @@
   }
 }
 
-.login_container {
+.register_container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 430px;
+  height: 609px;
   width: 400px;
   background-color: var(--primary-background-color);
   z-index: 5;
 }
 
-.login_input__container {
+.register_input__container {
   display: flex;
   font-size: 14px;
   flex-direction: column;
@@ -53,9 +53,7 @@
 .label {
   color: var(--secondary-text-color);
   margin-bottom: 8px;
-  &:last-of-type {
-    margin-top: 20px;
-  }
+  margin-top: 20px;
 }
 
 .input {
@@ -67,7 +65,7 @@
   color: var(--placeholder-text-color);
 }
 
-.login_btn {
+.register_btn {
   margin-top: 32px;
   border: none;
   color: var(--btn-text-color);
@@ -84,7 +82,18 @@
   color: var(--main-accent-color);
 }
 
+.register_p {
+  font-size: 13px;
+  color: var(--secondary-text-color);
+}
+
 /* quote container */
+
+.main_header {
+  font-family: var(--extra-font-family);
+  color: var(--primary-text-color);
+  margin-bottom: 48px;
+}
 
 .quote_container {
   margin: auto;
@@ -92,7 +101,37 @@
 }
 
 .quote_div {
-  width: 400px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.list_header {
+  font-size: 20px;
+  line-height: 38px;
+
+  &:last-of-type {
+    margin-top: 32px;
+  }
+}
+
+.register_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.register_list__item {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  height: 8px;
+  margin-right: 12px;
 }
 
 .main_quote {

@@ -16,7 +16,7 @@ function App() {
       <Route path={paths.main} element={<SharedLayout />}>
         <Route index element={<Main />} />
         <Route path={paths.login} element={<Login />} />
-        <Route path={paths.register} element={<Registration />} />
+        <Route path={paths.registration} element={<Registration />} />
         <Route path={paths.library} element={<Library />} />
         <Route path={paths.startTraining} element={<StartTraining />} />
         <Route path={paths.statistics} element={<Statistics />} />
