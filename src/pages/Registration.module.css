@@ -115,9 +115,6 @@
 }
 
 .register_list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   color: var(--secondary-text-color);
   display: flex;
   flex-direction: column;

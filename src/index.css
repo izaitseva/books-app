@@ -6,6 +6,7 @@
   --btn-text-color: #ffffff;
 
   /* background  colors */
+  --main-backgound-color: #f6f7fb;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f7fa;
   --open-modal-background-color: rgba(43, 43, 43, 0.25);
@@ -22,6 +23,7 @@
 
 body {
   margin: 0;
+  background-color: var(--main-backgound-color);
   font-family: var(--main-font-family);
 }
 
@@ -32,4 +34,23 @@ h4,
 h5,
 h6 {
   font-family: var(--main-font-family);
+}
+
+label {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+
+p {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+  padding: 0;
 }

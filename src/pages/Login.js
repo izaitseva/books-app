@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import lapki from "../images/lapki.svg";
+import lapki from "../images/lapki-icon.svg";
 import styles from "./Login.module.css";
 
 export const Login = () => {

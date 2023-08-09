@@ -1,0 +1,98 @@
+/* library container */
+
+.main_container {
+  margin-top: 40px;
+}
+
+.inputs_container {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.input_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.library_btn {
+  background-color: transparent;
+  border: 1px solid var(--primary-text-color);
+  width: 181px;
+  height: 42px;
+  padding: 0;
+
+  &:hover,
+  :focus {
+    cursor: pointer;
+    background-color: var(--main-accent-color);
+    color: var(--btn-text-color);
+    border: none;
+  }
+}
+
+.label {
+  margin-bottom: 8px;
+}
+.input {
+  padding: 0;
+  padding-left: 12px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--placeholder-text-color);
+}
+
+.title_input {
+  background-color: var(--primary-background-color);
+  /* border: 1px solid var(--placeholder-text-color); */
+  border: none;
+  width: 346px;
+}
+
+.author_input {
+  width: 250px;
+}
+
+.publication_input {
+  width: 134px;
+}
+
+.pages_input {
+  width: 134px;
+}
+
+/* steps container */
+
+.steps_container {
+  margin-top: 40px;
+}
+
+.desc_list {
+  line-height: 0;
+  padding-left: 40px;
+  padding-top: 40px;
+
+  background-color: var(--primary-background-color);
+  width: 608px;
+  height: 272px;
+  margin: auto;
+}
+
+.header_list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.list_header {
+  font-size: 16px;
+}
+
+.list_title {
+  font-size: 19px;
+}
+.list_div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
