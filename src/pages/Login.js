@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import lapki from "../images/lapki-icon.svg";
 import styles from "./Login.module.css";
+import { paths } from "../paths";
 
 export const Login = () => {
   return (
@@ -31,7 +32,9 @@ export const Login = () => {
             </button>
           </div>
 
-          <NavLink className={styles.link}>Register</NavLink>
+          <NavLink to={paths.registration} className={styles.link}>
+            Register
+          </NavLink>
         </div>
       </div>
 

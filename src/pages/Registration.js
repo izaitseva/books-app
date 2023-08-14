@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Registration.module.css";
 import arrow from "../images/arrow.svg";
+import { paths } from "../paths";
 
 export const Registration = () => {
   return (
@@ -50,7 +51,10 @@ export const Registration = () => {
           </div>
           <p className={styles.register_p}>
             Already have an account?
-            <NavLink className={styles.link}> Log in</NavLink>
+            <NavLink to={paths.login} className={styles.link}>
+              {" "}
+              Log in
+            </NavLink>
           </p>
         </div>
       </div>
