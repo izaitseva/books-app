@@ -2,14 +2,20 @@ import styles from "./Library.module.css";
 import point from "../images/point-icon.svg";
 import flag from "../images/flag-icon.svg";
 import book from "../images/book-icon.svg";
+// import { useState } from "react";
 
 export const Library = () => {
+  // const [bookTitle, setBookTitle] = useState("");
+  // const [books, setBooks] = useState([]);
+
   return (
     <div className={styles.main_container}>
       <div className={styles.inputs_container}>
         <div className={styles.input_div}>
           <label className={styles.label}>Book title</label>
           <input
+            // value={bookTitle}
+            // onChange={(e) => setBookTitle(e.target.value)}
             className={`${styles.input} ${styles.title_input} `}
             type="textarea"
             id="textarea"
@@ -32,15 +38,6 @@ export const Library = () => {
             type="date"
             id="date"
             placeholder="none"
-          />
-        </div>
-        <div className={styles.input_div}>
-          <label className={styles.label}>Amount of pages</label>
-          <input
-            className={`${styles.pages_input} ${styles.input}`}
-            type="number"
-            id="number"
-            placeholder="..."
           />
         </div>
         <button className={styles.library_btn} type="button">
@@ -76,6 +73,24 @@ export const Library = () => {
             </div>
           </li>
         </ul>
+      </div>
+      {/* going to read */}
+      <div>
+        <h1>Going to read</h1>
+        <table>
+          <tr>
+            <th>Book title</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>Pages</th>
+          </tr>
+          <tr>
+            <td>Book title </td>
+            <td>19</td>
+            <td>Male</td>
+            <td>Male</td>
+          </tr>
+        </table>
       </div>
     </div>
   );
