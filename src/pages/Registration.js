@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Registration.module.css";
 import arrow from "../images/arrow.svg";
 import { paths } from "../paths";
@@ -10,6 +10,7 @@ export const Registration = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,9 +21,11 @@ export const Registration = () => {
         email,
         password,
       };
+      
       console.log(userData);
       const response = await fetchAuth(userData);
       console.log("Реєстрація успішна:", response.data);
+      navigate(paths.login)
     } catch (error) {
       console.error("Помилка реєстрації:", error);
     }

@@ -31,6 +31,10 @@ export const Login = () => {
     try {
       const response = await fetchLogin({ email, password });
       console.log("Login successful:", response.data);
+
+      const accessToken = response.data.accessToken;
+      localStorage.setItem("accessToken", accessToken);
+
       navigate(paths.library);
     } catch (err) {
       if (!err?.response) {

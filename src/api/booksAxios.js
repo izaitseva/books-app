@@ -1,25 +1,24 @@
-import axios from "axios";
-
-const BASE_URL = "https://bookread-backend.goit.global";
+import api from "./api";
 
 export const fetchAuth = (userData) => {
-  return axios.post(`${BASE_URL}/auth/register`, userData);
+  return api.post(`/auth/register`, userData);
 };
 
 export const fetchLogin = (loginData) => {
-  return axios.post(`${BASE_URL}/auth/login`, loginData);
+  return api.post(`/auth/login`, loginData);
 };
 
-export const fetchAddBook = () => {
-  return axios.post(`${BASE_URL}/book`);
+export const fetchAddBook = (bookData) => {
+  console.log(bookData);
+  return api.post(`/book`, bookData);
 };
 
 export const fetchDeleteBooks = (bookId) => {
-  return axios.delete(`${BASE_URL}/book/${bookId}`);
+  return api.delete(`/book/${bookId}`);
 };
 
 // export const fetchBooksById = (bookId) => {
-//   return axios.get(`${BASE_URL}/book/${bookId}`);
+//   return axios.get(`/book/${bookId}`);
 // };
 
 // export const fetchFilterBooks = (characterFilter) => {
